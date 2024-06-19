@@ -1,0 +1,2 @@
+dailync: 'TP4DAILY_{year:04d}_{dayinyear:03d}.nc'
+dailync_full: '{year:04d}{month:02d}{day:02d}_dm-12km-NERSC-MODEL-TOPAZ4B-ARC-RAN.fv2.0.nc'

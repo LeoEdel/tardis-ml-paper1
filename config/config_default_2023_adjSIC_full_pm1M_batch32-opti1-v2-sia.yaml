@@ -1,0 +1,300 @@
+---
+batch_size: 32
+bayesian_search: false
+covariable_fields:
+- siconc
+- sisnthick
+- zos
+- vxsi
+- vysi
+dataset_charac:
+  invert_time: true
+  non_ass: adjSIC
+  return_raw: false
+  setup: no_bias_sia
+epochs:
+- 100
+- 40
+- 60
+- 70
+- 50
+- 60
+- 100
+- 100
+fig_dir: /figures/
+forcing_adir: /Jiping/dailyforcing_2014_2017
+forcing_bdir: /forcings_2023
+forcing_fields:
+- 2T
+- MSL
+- 10V
+- 10U
+- TP
+- SSR
+- STR
+forcing_mean_days: 29
+freerun_dir: /Jiping_2023/TP4b_freerun/
+history:
+  bias:
+    H:
+    - 1
+    - 8
+    - 15
+    - 22
+  covar:
+    H:
+      siconc:
+      - -30
+      - -7
+      - 0
+      - 7
+      - 30
+      sisnthick:
+      - -30
+      - -7
+      - 0
+      - 7
+      - 30
+      vxsi:
+      - -30
+      - -7
+      - 0
+      - 7
+      - 30
+      vysi:
+      - -30
+      - -7
+      - 0
+      - 7
+      - 30
+      zos:
+      - -30
+      - -7
+      - 0
+      - 7
+      - 30
+  forcing:
+    H:
+      10U:
+      - -30
+      - -7
+      - 0
+      - 7
+      - 30
+      10V:
+      - -30
+      - -7
+      - 0
+      - 7
+      - 30
+      2T:
+      - -30
+      - -7
+      - 0
+      - 7
+      - 30
+      MSL:
+      - -30
+      - -7
+      - 0
+      - 7
+      - 30
+      SSR:
+      - -30
+      - -7
+      - 0
+      - 7
+      - 30
+      STR:
+      - -30
+      - -7
+      - 0
+      - 7
+      - 30
+      TP:
+      - -30
+      - -7
+      - 0
+      - 7
+      - 30
+  keras:
+    H:
+    - -30
+    - -7
+    - 0
+    - 7
+    - 30
+  noass:
+    H:
+    - -30
+    - -7
+    - 0
+    - 7
+    - 30
+introspect: false
+keepvar_threshold: 0
+lim_idm:
+- 100
+- 550
+lim_jdm:
+- 150
+- 629
+max_trials: 100
+ml: lstm
+ml_dir: /ml/
+ml_name: LSTM
+most_imp: null
+n_iter_bay: 100
+name: LSTM3_bk
+needfutur: null
+needpast: null
+nosit_dir: /Jiping_2023/TP4b_noSIT/
+nseq: 0
+nsplit: 3
+ntest: null
+ntrain: null
+nval: null
+para_var_dpd:
+  History:
+  - 1
+  - 3
+  - 3
+  - 3
+  History_neg:
+  - 0
+  - 0
+  - 0
+  - 0
+  description: dictionary contains all parameters that vary for each type of variables
+  n_components:
+  - 8
+  - 8
+  - 4
+  - 4
+  type_var_short:
+  - tp
+  - nc
+  - fo
+  - co
+  type_variable:
+  - target_predict_var
+  - non_corrected_var
+  - forcings
+  - covariables
+pca_dir: /results/pca_i100-550_j150-629
+random_state: null
+results_dir: /results/lstm_240618-155530
+return_train_score: true
+target_field: sithick
+timeofday: 0.5
+user: Leo
+withsit_dir: /Jiping_2023/TP4b/
+zz_features:
+  PC00:
+  - SITf
+  - 2T
+  - MSL
+  - 10U
+  - TP
+  - SSR
+  - STR
+  - sisnthick
+  - zos
+  - vxsi
+  - vysi
+  - SIA
+  PC01:
+  - SITf
+  - 2T
+  - MSL
+  - 10V
+  - 10U
+  - TP
+  - STR
+  - siconc
+  - sisnthick
+  - zos
+  - vxsi
+  - vysi
+  - SIA
+  PC02:
+  - SITf
+  - 2T
+  - MSL
+  - 10V
+  - 10U
+  - TP
+  - SSR
+  - STR
+  - siconc
+  - sisnthick
+  - zos
+  - vxsi
+  - vysi
+  - SIA
+  PC03:
+  - SITf
+  - 2T
+  - MSL
+  - 10V
+  - 10U
+  - TP
+  - SSR
+  - STR
+  - siconc
+  - sisnthick
+  - zos
+  - vxsi
+  - vysi
+  - SIA
+  PC04:
+  - SITf
+  - 2T
+  - MSL
+  - 10U
+  - SSR
+  - STR
+  - siconc
+  - sisnthick
+  - zos
+  - vxsi
+  - vysi
+  - SIA
+  PC05:
+  - SITf
+  - 2T
+  - MSL
+  - 10V
+  - 10U
+  - SSR
+  - STR
+  - siconc
+  - sisnthick
+  - zos
+  - vxsi
+  - vysi
+  - SIA
+  PC06:
+  - 2T
+  - 10V
+  - TP
+  - siconc
+  - sisnthick
+  - zos
+  - vxsi
+  - vysi
+  - SIA
+  PC07:
+  - SITf
+  - 2T
+  - MSL
+  - 10V
+  - 10U
+  - SSR
+  - STR
+  - siconc
+  - sisnthick
+  - zos
+  - vxsi
+  - vysi
+  - SIA
